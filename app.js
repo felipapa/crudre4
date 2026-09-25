@@ -88,10 +88,8 @@ function agregarArma() {
 }
 
 function borrar(id) {
-    if (confirm("¿Borrar esta arma?")) {
-        fetch(api + "/eliminar_armas/" + id, { method: "DELETE" })
-            .then(function () { cargarArmas() })
-    }
+    fetch(api + "/eliminar_armas/" + id, { method: "DELETE" })
+        .then(function () { cargarArmas() })
 }
 
 document.getElementById("cargar").onclick = cargarArmas

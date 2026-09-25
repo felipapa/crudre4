@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis armas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <img class="logiño" src="attachment_23346983.png" alt="">
+    <main class="configantidesorden">
+        
+        <img class="dispariño" src="images-removebg-preview (1).png" alt="Imagen de disparos">
+        <h1>Inventario CrudRe4</h1>
+        <p class="textoarmainicio">Lista de armas con FastAPI creada con toda mi inteligencia y pensamiento.</p>
+        <button id="cargar">Mostrar armas</button>
+        <p id="mensaje" class="mensajeepic">Todavia no se cargaron los datos.</p>
+        <img class="dispariño" src="images-removebg-preview (1).png" alt="Imagen de disparos">
+
+
+        <section class="seccionaza">
+            <h2>Buscar armas</h2>
+            <form class="formulari">
+                <label>Precio minimo <input id="filtroPrecio" type="number" placeholder="Precio"></label>
+                <button id="buscarPrecio" type="button">Buscar precio</button>
+                <label>Potencia minima <input id="filtroDaño" type="number" placeholder="Potencia"></label>
+                <button id="buscarDaño" type="button">Buscar potencia</button>
+            </form>
+        </section>
+
+        <section class="seccionaza">
+            <h2>Agregar arma</h2>
+            <form class="formulari">
+                <label>Nombre <input id="nombre" placeholder="Nombre" required></label>
+                <label>Potencia <input id="potencia" type="number" placeholder="Potencia" required></label>
+                <label>Velocidad <input id="velocidad" type="number" placeholder="Velocidad" required></label>
+                <label>Capacidad <input id="capacidad" type="number" placeholder="Capacidad" required></label>
+                <label>Precio <input id="precio" type="number" placeholder="Precio" required></label>
+                <button id="agregar" type="button">Agregar</button>
+            </form>
+        </section>
+
+        <section class="seccionaza">
+            <h2>Armas guardadas</h2>
+            <div class="tablaScroll">
+                <table>
+                    <thead><tr><th>ID</th><th>Nombre</th><th>Potencia</th><th>Precio</th><th></th></tr></thead>
+                    <tbody id="tabla"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

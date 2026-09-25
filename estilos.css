@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a40008 0%, #a40008 50%, #111111 50%, #111111 100%);
+    color: #222222;
+    font-family: Arial, sans-serif;
+}
+
+.dispariño{
+    position: relative;
+    top: 130px;
+    z-index: 0;
+}
+
+.logiño {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 190px;
+    padding: 5px;
+    background-color: white;
+    border: 4px solid black;
+}
+
+.configantidesorden {
+    position: relative;
+    width: 90%;
+    padding: 150px 30px 50px;
+}
+
+
+h1 {
+    position: relative;
+    z-index: 2;
+    margin: -65px 0 0 40px;
+    padding: 17px;
+    background-color: #a40008;
+    color: white;
+    border-bottom: 6px solid black;
+    font-size: 34px;
+
+    transform: rotate(-2deg);
+}
+
+.textoarmainicio {
+    width: 600px;
+    margin: 35px 0 20px 110px;
+    padding: 12px;
+    background-color: #555555;
+    color: white;
+    transform: rotate(1deg);
+}
+
+.mensajeepic{
+    position: relative;
+    top: 40px;
+    left: 260px;
+    width: 560px;
+    padding: 10px;
+    background-color: #eeeeee;
+    color: #222222;
+    border-left: 8px solid #a40008;
+    transform: rotate(-5deg);
+}
+
+h2 {
+    margin: 0 0 15px;
+    padding: 10px;
+    background-color: #222222;
+    color: white;
+    border-left: 10px solid #a40008;
+}
+
+.seccionaza {
+    width: 700px;
+    margin-top: 38px;
+    margin-left: 190px;
+    padding: 18px;
+    background-color: #eeeeee;
+    border-top: 6px solid #a40008;
+    border-bottom: 3px solid black;
+    transform: rotate(2deg);
+    position: relative;
+}
+
+
+.formulari {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    background-color: #cccccc;
+    border: 2px solid black;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+input {
+    width: 110px;
+    padding: 9px;
+    border: 2px solid #555555;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #a40008;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.tablaScroll {
+    overflow-x: auto;
+}
+
+
+
+td {
+    padding: 10px;
+    border: 2px solid black;
+    text-align: left;
+}
+
+th {
+    background-color: #a40008;
+    color: white;
+}

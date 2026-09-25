@@ -3,27 +3,27 @@ flowchart TD
 
     Usuario["Usuario"]
 
-    subgraph Frontend["Navegador: frontend"]
+    subgraph Frontend [Navegador]
         HTML["index.html<br>formularios y botones"]
         CSS["estilos.css<br>apariencia"]
         JS["app.js<br>fetch y funciones"]
         Tabla["tabla HTML<br>datos mostrados"]
     end
 
-    subgraph Peticion["Peticion HTTP"]
+    subgraph Peticion [Peticion HTTP]
         Metodo["GET POST DELETE"]
         JSON["JSON"]
         CORS["CORSMiddleware"]
     end
 
-    subgraph Backend["Servidor FastAPI"]
+    subgraph Backend [Servidor FastAPI]
         API["main.py"]
         Rutas["Rutas de la API"]
         Validar["Pydantic<br>arma1 y arma2"]
         Conexion["Depends(get_connection)"]
     end
 
-    subgraph Operaciones["Operaciones disponibles"]
+    subgraph Operaciones [Operaciones disponibles]
         Crear["POST /agregar"]
         Leer["GET /leer_armas"]
         Precio["GET /leer_precio<br>?precio=..."]
@@ -32,7 +32,7 @@ flowchart TD
         Actualizar["PUT /actualizararmas"]
     end
 
-    subgraph Datos["Acceso a datos"]
+    subgraph Datos [Acceso a datos]
         Manager["armasmanager.py"]
         SQL["INSERT SELECT DELETE UPDATE"]
         SQLite[("Residentevil.db")]
